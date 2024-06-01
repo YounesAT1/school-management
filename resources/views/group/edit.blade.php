@@ -7,7 +7,7 @@
         <div class="card">
           <h3 class="card-header">Edit the group with the ID : {{ $group->id }}</h3>
           <div class="card-body">
-            <form action="{{ route('director.updategroup', $group) }}" method="POST" autocomplete="off">
+            <form action="{{ route('director.updateGroup', $group) }}" method="POST" autocomplete="off">
               @csrf
               @method('PUT')
               <div class="form-group mb-3">

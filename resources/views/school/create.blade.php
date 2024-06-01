@@ -2,11 +2,10 @@
 
 @section('content')
   <div class="container">
-    <h1>Add a School</h1>
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
-          <p class="card-header">School Details</p>
+          <p class="card-header">Add a School</p>
           <div class="card-body">
             <form method="POST" enctype="multipart/form-data" action="{{ route('admin.storeSchool') }}">
               @csrf
@@ -55,6 +54,7 @@
                   <button type="submit" class="btn btn-primary">
                     Add
                   </button>
+                  <a href="{{ route('admin.schoolsList') }}" class="btn btn-danger">Cancel</a>
                 </div>
               </div>
             </form>
